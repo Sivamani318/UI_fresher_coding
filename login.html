@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>login</title>
+<link rel="stylesheet" type="text/css" href="formValidations.css" />
+<script src="formValidations.js"></script>
+
+</head>
+<body>
+<div class="log">
+<div>
+<table align='center' class="ltable"  border='1' width='70%' cellpadding='8' cellspacing='0'>
+<tr> <th><b>ID</b></th><th><b>Name</b></th><th><b>Email</b></th><th><b>Class</b></th><th><b>Year</b></th><th><b>City</b></th><th><b>Country</b></th>
+<div id="add">
+<tr>
+<td id="id"></td>
+<td id="name"></td>
+<td id="email"></td> 
+<td id="clss"></td>
+<td id="year"></td>
+<td id="city"></td>
+<td id="cunt"></td>
+<td>
+<button type="submit" onclick="sedit()" id="save"  class="ebtn">Edit</button>
+	<button type="submit" onclick="sdelete()" id="clear"  class="dbtn">Delete</button>
+</td>
+</tr>
+</div>
+</table>
+<br/><br/>
+</div>
+
+  <div class="container">
+    
+	<div >
+     <table align='center' class="rtable"  border='0' width='40%' cellpadding='8' cellspacing='0'>
+	 <tr><td><b>student id</b></td>
+	 <td><input type="number"  id="sid" value=""  required></td></tr>
+	 <tr><td><b>sudent name</b></td>
+	 <td><input type="text"  id="sname" value=""  pattern="[a-zA-Z]+" > </td></tr>
+	 <tr>
+     <td><label for="email"><b>Email</b></label></td>
+    <td><input type="email"  id="semail" value="" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" required > 
+    </td></tr>
+	<tr><td>
+    <label for="clss"><b>class</b></label></td><td>
+    <input type="text" id="sclss"  value=""  required>
+   </tr></td>
+	
+	 <tr><td><b>Enrollment year</b></td>
+	 <td><input type="number"  id="syear" value=""  required></td></tr>
+   <tr><td>
+    <label for="city"><b>City</b></label></td><td>
+    <input type="text" id="scity"  value=""  required>
+	</tr></td>
+	<tr><td>
+    <label for="country"><b>country</b></label></td><td>
+    <input type="text" id="scunt"  value=""  required>
+	</tr></td>
+	</table>
+	</div>
+	<br/>
+	<div align="center">
+    <button type="submit" onclick="sinput()" id="save"  class="sbtn">Save</button>
+	<button type="submit" onclick="sclear()" id="clear"  class="cbtn">clear</button>
+	</div>
+  </div>
+  
+ </div>
+
+
+</body>
+
+<html>
